@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <interface id="1" language="java" name="edu.elon.contact2.Controller" project="Contact" 
+    file="/Contact/src/edu/elon/contact2/Controller.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="699" y="557"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="2" language="java" name="edu.elon.contact2.DatabaseController" project="Contact" 
+    file="/Contact/src/edu/elon/contact2/DatabaseController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="301" y="941"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="edu.elon.contact2.DatabaseModel" project="Contact" 
+    file="/Contact/src/edu/elon/contact2/DatabaseModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="727" y="124"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="4" language="java" name="edu.elon.contact2.DatabaseObserver" project="Contact" 
+    file="/Contact/src/edu/elon/contact2/DatabaseObserver.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1214" y="218"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="5" language="java" name="edu.elon.contact2.DatabseModelTest" project="Contact" 
+    file="/Contact/src/edu/elon/contact2/DatabseModelTest.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1274" y="-58"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="edu.elon.contact2.DisplayView" project="Contact" 
+    file="/Contact/src/edu/elon/contact2/DisplayView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1018" y="660"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="7" language="java" name="edu.elon.contact2.Model" project="Contact" 
+    file="/Contact/src/edu/elon/contact2/Model.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1382" y="718"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="8" language="java" name="edu.elon.contact2.TestDriver" project="Contact" 
+    file="/Contact/src/edu/elon/contact2/TestDriver.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="400" y="520"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="9">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="10" name="view"/>      
+      <multiplicity id="11" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="12">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <association id="13">    
+    <bendpoint x="940" y="1296"/>    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="14" name="model"/>      
+      <multiplicity id="15" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="16">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="17" name="observers"/>      
+      <multiplicity id="18" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="19">    
+    <bendpoint x="956" y="1180"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <association id="20">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="21" name="jdbc"/>      
+      <multiplicity id="22" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="23">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="24" name="controller"/>      
+      <multiplicity id="25" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="26">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <realization id="27">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <realization id="28">    
+    <bendpoint x="1336" y="156"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <realization id="29">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <dependency id="30">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <association id="31">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="32" name="model"/>      
+      <multiplicity id="33" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
